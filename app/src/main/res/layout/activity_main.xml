@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16sp"
+    android:paddingRight="16sp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextAndroidVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Android Version"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextAndroidCodeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Android Code Name"
+        android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button"
+            android:onClick="click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:layout_marginBottom="16sp"
+            android:text="Button" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFF"
+            android:layout_marginBottom="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1.5"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cupcake"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/templateId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFF"
+            android:layout_marginBottom="10sp">
+
+            <TextView
+                android:id="@+id/templateTextId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1.6"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Donut"
+                android:textSize="16sp" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
